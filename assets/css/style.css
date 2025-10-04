@@ -1,0 +1,220 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --text-primary: #e9ecef;
+  --text-secondary: #adb5bd;
+  --border-color: #495057;
+  --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--bg-secondary);
+}
+
+.card {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .card {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .table {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: var(--bg-secondary);
+  border-color: #0d6efd;
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .input-group-text {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .modal-content {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .modal-header {
+  border-bottom-color: var(--border-color);
+}
+
+[data-theme="dark"] .modal-footer {
+  border-top-color: var(--border-color);
+}
+
+/* Stat Cards */
+.stat-card {
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  opacity: 0.3;
+}
+
+/* Table Styles */
+.table thead th {
+  background-color: var(--bg-secondary);
+  border-bottom: 2px solid var(--border-color);
+  font-weight: 600;
+}
+
+.table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Button Styles */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .footer {
+  background-color: var(--bg-primary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stat-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .table {
+    font-size: 0.875rem;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/* Loading Spinner */
+.spinner-border {
+  color: #0d6efd;
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #0d6efd;
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .pagination .page-link {
+  background-color: var(--bg-primary);
+  border-color: var(--border-color);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Alert Styles */
+.alert {
+  border-radius: 8px;
+  border: none;
+}
+
+/* Image Styles */
+img.rounded-circle {
+  border: 2px solid var(--border-color);
+}
