@@ -155,7 +155,7 @@ NIM,Nama,Email,Tanggal Lahir,Jenis Kelamin,Alamat
 ## 🖼️ Screenshot
 
 <p align="center">
-   <img src="uploads/ss-an.png.png" alt="Tampilan Dashboard SIDAMA" width="800">
+   <img src="uploads/ss-an.png" alt="Tampilan Dashboard SIDAMA" width="800">
    <br>
    <i>Tampilan Dashboard SIDAMA - Sistem Informasi Data Mahasiswa</i>
 </p>
