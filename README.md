@@ -151,9 +151,14 @@ NIM,Nama,Email,Tanggal Lahir,Jenis Kelamin,Alamat
 ```
 
 
+
 ## 🖼️ Screenshot
 
-<p align="center"><i>Tambahkan screenshot aplikasi di sini untuk memperlihatkan tampilan dashboard, tabel, dan fitur unggulan.</i></p>
+<p align="center">
+   <img src="assets/screenshoot-dashboard.png" alt="Tampilan Dashboard SIDAMA" width="800">
+   <br>
+   <i>Tampilan Dashboard SIDAMA - Sistem Informasi Data Mahasiswa</i>
+</p>
 
 
 ## 📄 Lisensi
@@ -165,7 +170,6 @@ MIT License — bebas digunakan & dikembangkan.
 
 Butuh bantuan, saran, atau ingin berkontribusi?
 
-- Email: <b>slmnalfauzi@gmail.com</b>
 - GitHub: [slmnalfauzi](https://github.com/slmnalfauzi)
 
 ---
